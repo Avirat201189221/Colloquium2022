@@ -40,19 +40,17 @@
   <!-- Main Style -->
   <link href="{%static 'css/style.css' %}" rel="stylesheet">
 
-  {% comment %} Timeline Style {% endcomment %}
-  <link href="{%static 'css/timeline-styles.css' %}" rel="stylesheet">
-
   <!-- Sponsor-Styles -->
   <link href="{%static 'css/sponsor-styles-2.css' %}" rel="stylesheet">
+
+  {% comment %} Event Styles {% endcomment %}
+  <link href="{%static 'css/event-styles.css' %}" rel="stylesheet">
 
   <!--Faq styles -->
   <link href="{%static 'css/faq-styles.css' %}" rel="stylesheet">
 
   {% comment %} OC/EC Styles {% endcomment %}
   <link href="{%static 'css/oc-ec-styles.css' %}" rel="stylesheet">
-  {% comment %} Carousel {% endcomment %}
-  <link href="{%static 'css/carousel.css' %}" rel="stylesheet">
   
   
     
@@ -76,6 +74,9 @@
 </head>
 
 <body>
+    <div class="bgimg">
+        <img class="bg" src="{%static 'img/bg.jpg' %}">
+    </div>
   <!-- Start Header -->
   <div class="scrolltotop"><img src="{%static 'img/up-arrow.svg'%}" /></div>
   <!-- ScrollToTop js-->
@@ -103,7 +104,7 @@
               <span class="ball-animation"></span>
             </div>
             <div class="nav-link-flex">
-              <a class="nav-link" href="#Timeline">Events</a>
+              <a class="nav-link" href="#mu-events">Events</a>
               <span class="ball-animation"></span>
             </div>
             <div class="nav-link-flex">
@@ -126,8 +127,6 @@
     <!-- End menu -->
 
     <div class="mu-hero-overlay">
-      {% comment %} <img class="sponsor-image" src="{%static 'images/phoenix-back.jpg' %}" class="phoenix-back"
-        loading="lazy"> {% endcomment%}
       <div class="container">
         <div class="mu-hero-area">
 
@@ -135,9 +134,6 @@
           <div class="mu-hero-featured-area">
             <!-- Start center Logo -->
             <div class="mu-logo-area">
-              <!-- text based logo -->
-              <!--<a class="mu-logo" href="#">Eventoz</a>-->
-              <!-- image based logo -->
               <center>
                 <div data-aos="fade-up" data-aos-duration="2000">
                   <a class="mu-logo" href="#"><img class="sponsor-image"
@@ -181,12 +177,6 @@
   <main role="main">
     <!-- Start About -->
     <section id="mu-about">
-      {% comment %} <div class="blur" style="height:20px;backdrop-filter: blur(5px);">
-      </div> {% endcomment %}
-      {% comment %} <div class="gradient-separator"
-        style="height:0px; background: linear-gradient(0deg, rgba(33,33,33,1) 0%, rgba(38,43,48,1) 100%);">
-      </div> {% endcomment %}
-
       <div class="container">
         <section id="about"></section>
         <center>
@@ -365,9 +355,158 @@
 
     <!-- Start FAQ -->
 
+  {% comment %} Events Start {% endcomment %}
+    <section id="mu-events">
+      {% comment %} <div class="container">
+        <center>
+          <h2 class="about-header">Events</h2>
+        </center>
+        <div class="events-grid">
+          <div class="event">
+            <div class="event-logo">
+            <img class="event-img" src="{%static 'img/event-logos/What The Buzz logo white.png' %}">
+            </div>
+            <div class="event-desc">
+              <div class="e-header">
+                <center>
+                <h4 class="e-head">What The Buzz</h4>
+                <p class="des">This event is very cool plz attend it asap at the given dates youll enjoy beyoun your wildest dreams. Full guarantee 100% paisa vapas.</p>
+                </center>
+                <div class="dandv">
+                  <div class="date">
+                  <p>Date:</p>
+                  <span>23rd March 2023</span>
+                </div>
+                <div class="date">
+                  <p>Venue:</p>
+                  <span>Hostel D</span>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> {% endcomment %}
+      <center>
+        <h2 class="about-header">Events</h2>
+      </center>
+      <div class="container">
+      <div class="conti">
+        <div class="carde">
+          <div class="img--container">
+            <img src="{%static 'img/event-logos/What The Buzz logo white.png' %}" alt="" />
+          </div>
+          <div class="card--text">
+            <div class="text--container">
+              <div class="text--header">
+                <h2 class="text--title">What The Buzz</h2>
+                <p class="text--subtitle">August 23 2023</p>
+              </div>
+              <div class="text--details">
+                <p class="text--description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea nulla cum impedit et nemo molestiae, suscipit animi officiis soluta natus, provident ab laudantium, amet dolorum.
+                </p>
+                <a href="" class="text--link">Register Now !</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carde">
+          <div class="img--container">
+            <img src="{%static 'img/event-logos/What The Buzz logo white.png' %}" alt="" />
+          </div>
+          <div class="card--text">
+            <div class="text--container">
+              <div class="text--header">
+                <h2 class="text--title">Breaking Barriers</h2>
+                <p class="text--subtitle">August 24 2023</p>
+              </div>
+              <div class="text--details">
+                <p class="text--description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea nulla cum impedit et nemo molestiae, suscipit animi officiis soluta natus, provident ab laudantium, amet dolorum.
+                </p>
+                {% comment %} <a href="" class="text--link">Register Now !</a> {% endcomment %}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carde">
+          <div class="img--container">
+            <img src="{%static 'img/event-logos/What The Buzz logo white.png' %}" alt="" />
+          </div>
+          <div class="card--text">
+            <div class="text--container">
+              <div class="text--header">
+                <h2 class="text--title">Code 'O Clock</h2>
+                <p class="text--subtitle">August 24-25 2023</p>
+              </div>
+              <div class="text--details">
+                <p class="text--description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea nulla cum impedit et nemo molestiae, suscipit animi officiis soluta natus, provident ab laudantium, amet dolorum.
+                </p>
+                <a href="" class="text--link">Register Now !</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carde">
+          <div class="img--container">
+            <img src="{%static 'img/event-logos/What The Buzz logo white.png' %}" alt="" />
+          </div>
+          <div class="card--text">
+            <div class="text--container">
+              <div class="text--header">
+                <h2 class="text--title">Pixel</h2>
+                <p class="text--subtitle">August 25 2023</p>
+              </div>
+              <div class="text--details">
+                <p class="text--description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea nulla cum impedit et nemo molestiae, suscipit animi officiis soluta natus, provident ab laudantium, amet dolorum.
+                </p>
+                <a href="" class="text--link">Register Now !</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carde">
+          <div class="img--container">
+            <img src="{%static 'img/event-logos/What The Buzz logo white.png' %}" alt="" />
+          </div>
+          <div class="card--text">
+            <div class="text--container">
+              <div class="text--header">
+                <h2 class="text--title">The Clown Canard</h2>
+                <p class="text--subtitle">August 26 2023</p>
+              </div>
+              <div class="text--details">
+                <p class="text--description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea nulla cum impedit et nemo molestiae, suscipit animi officiis soluta natus, provident ab laudantium, amet dolorum.
+                </p>
+                <a href="" class="text--link">Register Now !</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carde">
+          <div class="img--container">
+            <img src="{%static 'img/event-logos/What The Buzz logo white.png' %}" alt="" />
+          </div>
+          <div class="card--text">
+            <div class="text--container">
+              <div class="text--header">
+                <h2 class="text--title">Movie Night</h2>
+                <p class="text--subtitle">August 26 2023</p>
+              </div>
+              <div class="text--details">
+                <p class="text--description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea nulla cum impedit et nemo molestiae, suscipit animi officiis soluta natus, provident ab laudantium, amet dolorum.
+                </p>
+                {% comment %} <a href="" class="text--link">Register Now !</a> {% endcomment %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </ul>
+    </div>
+    </section>
+  {% comment %} End {% endcomment %}
 
     <section id="mu-faq">
-      <div class="container">
+      <div class="cont">
         <center>
           <h2 class="faq-title">FAQs</h2>
         </center>
@@ -594,39 +733,20 @@
                     learning fun, insightful and yet impactful. We have regularly been organizing events, seminars,
                     workshops to see real-life impact.</p>
                 </li>
-                {% comment %} <li><a href="#">our services</a></li>
-                <li><a href="#">privacy policy</a></li>
-                <li><a href="#">affiliate program</a></li> {% endcomment %}
               </ul>
             </div>
-            {% comment %} <div class="footer-col" style="opacity:0;width:10%;">
-              <h4>online shop</h4>
-              <ul>
-                <li><a href="#">watch</a></li>
-                <li><a href="#">bag</a></li>
-                <li><a href="#">shoes</a></li>
-                <li><a href="#">dress</a></li>
-              </ul>
-            </div> {% endcomment %}
-            <div class="footer-col">
-              <h4>About Us</h4>
-              <ul>
-                {% comment %} <p>©️ Copyright ISTE TIET 2022.</p> {% endcomment %}
-                <li>
-                  <p>ISTE is the abode to a passionate community that believes in harnessing the power of technology to
-                    transform teaching and learning,accelerate innovation and solve tough problems in education.</p>
-                </li>
-                {% comment %} <li><a href="#">returns</a></li>
-                <li><a href="#">order status</a></li>
-                <li><a href="#">payment options</a></li> {% endcomment %}
-              </ul>
-            </div>
+          <div class="footer-col">
+            <h4>IETE</h4>
+            <ul>
+              <li>
+                <p>loren isump iete something here</p>
+              </li>
+            </ul>
+          </div>
             <div class="footer-col">
               <h4>Follow Us</h4>
               <div class="social-links">
                 <a href="https://www.facebook.com/ISTE.Thapar"><i class="fa fa-facebook"></i></a>
-                <!-- <a href=""><i class="fa fa-twitter"></i></a> -->
-                <!-- <a href="http://uclmed.tech"><i class="fa fa-code"></i></a> -->
                 <a href="https://github.com/ISTE-TIET"><i class="fa fa-github"></i></a>
                 <a href="https://www.instagram.com/iste_tiet"><i class="fa fa-instagram"></i></a>
                 <a href="mailto:iste@thapar.edu"><i class="fa fa-envelope contact"></i></a>
@@ -636,7 +756,7 @@
           </div>
         </div>
         <center>
-          <p style="margin-top:2rem;">©️ Copyright ISTE TIET 2022.</p>
+          <p style="margin-top:2rem;">©️ Copyright ISTE TIET 2023.</p>
         </center>
       </footer>
       <!-- End footer -->

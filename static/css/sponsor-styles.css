@@ -1,7 +1,7 @@
-@media (max-width:2000px){
-    .container{
-        max-width: 99999px;
-    }
+@media (max-width: 2000px) {
+  .container {
+    max-width: 99999px;
+  }
 }
 
 .card-section {
@@ -18,7 +18,7 @@
   grid-template-columns: repeat(1, 1fr);
   grid-column-gap: var(--spacing-l);
   grid-row-gap: var(--spacing-l);
-  max-width: var(--width-container);
+  max-width: var(--width-cont);
   width: 100%;
 }
 
@@ -47,11 +47,11 @@
   padding-bottom: 2rem;
 }
 
-@media screen and (max-width:450px) {
-    .sponsor-card{
-        height:18rem;
-        width:18rem;
-    }
+@media screen and (max-width: 450px) {
+  .sponsor-card {
+    height: 18rem;
+    width: 18rem;
+  }
 }
 
 .sponsor-card:before {
