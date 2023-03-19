@@ -569,6 +569,10 @@ img {
   color: azure;
   font-size: 1rem;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
+  border-style: solid;
+  border-width: 2px;
+  padding: 0.5rem;
+  border-radius: 5px;
 }
 
 .mu-event-counter-area {
