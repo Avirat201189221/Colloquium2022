@@ -8,6 +8,8 @@
   grid-template-rows: repeat(1fr auto);
   grid-template-columns: 1fr;
   row-gap: 2rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .sponsors-head {
@@ -87,6 +89,6 @@
     display: flex;
   }
   .sponsor-image {
-    width: 100%;
+    width: 95%;
   }
 }
